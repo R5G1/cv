@@ -1,0 +1,392 @@
+//Styles
+
+@import "_null.scss";
+
+@import "_font name.scss";
+
+//@import "_burger.scss";
+
+//!===============================================================================
+//.extedet
+.color-title-lc {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin: 20px 0px 0px 20px;
+  font-weight: bold;
+}
+.color-text-lc {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.raith-line {
+  width: 84%;
+  height: 2px;
+  background: rgb(0, 51, 128);
+  margin: 20px 0px 25px 0px;
+}
+//!===============================================================================
+body {
+  background: rgb(5, 5, 5);
+  font-family: "Heebo", sans-serif;
+  height: 100%;
+  min-width: 920px;
+}
+.header {
+  &__conteier {
+    max-width: 920px;
+    position: relative;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+  }
+
+  &__columns {
+    display: flex;
+  }
+}
+.column {
+  &__left {
+    background: #292f31;
+
+    padding: 0px 20px 0px 40px;
+  }
+
+  &__left-photo {
+    // display: flex;
+    // justify-content: center;
+    margin: 20px 0px 40px 20px;
+    
+  }
+
+  &__left-img {
+    max-width: 180px;
+    // max-height: 200px;
+    border-radius: 5%;
+    border: 1px solid rgb(0, 51, 128);
+  }
+
+  &__left-content {
+  }
+
+  &__left-content-title-info {
+    @extend.color-text-lc;
+  }
+  &__left-content-one {
+    p:first-child {
+      font-weight: bold;
+    }
+    p {
+      //
+      margin: 10px 0px 5px 0px;
+    }
+    margin: 0px 0px 30px 0px;
+  }
+  &__left-content-education-two {
+    font-weight: bold;
+  }
+
+  &__left-content-title {
+    @extend .color-title-lc;
+  }
+
+  &__left-content-line {
+    width: 100%;
+    height: 2px;
+    background: rgb(0, 51, 128);
+    margin: 20px 0px 40px 0px;
+  }
+
+  &__left-content-title-info-contacts {
+    margin: 0px 0px 20px 0px;
+    min-width: 250px;
+
+    p {
+      @extend.color-text-lc;
+      margin: 10px 0px;
+
+      a {
+        color: rgb(36, 96, 187);
+        &:hover {
+          color: rgb(245, 245, 245);
+        }
+      }
+    }
+    .phone {
+      &::before {
+        content: "";
+        background: url("https://img.icons8.com/fluency/48/000000/phone.png") 0
+          0 / contain no-repeat;
+        padding: 0px 0px 0px 40px;
+      }
+    }
+    .mail {
+      &::before {
+        content: "";
+        background: url("https://img.icons8.com/fluency/48/000000/new-post.png")
+          0 0 / contain no-repeat;
+        padding: 0px 0px 0px 40px;
+      }
+    }
+    .telegram {
+      &::before {
+        content: "";
+        background: url("https://img.icons8.com/color/48/000000/telegram-app--v1.png")
+          0 0 / contain no-repeat;
+        padding: 0px 0px 0px 40px;
+      }
+    }
+    .discord {
+      color: rgb(36, 96, 187);
+      &:hover {
+        color: rgb(255, 255, 255);
+      }
+      &::before {
+        content: "";
+        background: url("/img/svg/discord.svg") 0 0 / contain no-repeat;
+        padding: 0px 0px 0px 40px;
+      }
+    }
+  }
+  &__left-content-title-info-skills {
+  }
+  &__left-content-ul-logo {
+  }
+  &__left-content-logo-img {
+    max-width: 40px;
+  }
+  &__left-content-li {
+    margin: 10px 0px 10px 0px;
+    span {
+      display: inline-flex;
+      align-items: center;
+      margin: 10px 0px 0px 0px;
+      color: rgb(250, 246, 246);
+      @extend.color-text-lc;
+      padding: 0px 0px 0px 10px;
+    }
+  }
+
+  &__left-text-ul {
+    margin: 20px 0;
+    li {
+      @extend.color-text-lc;
+      color: rgb(255, 255, 255);
+      margin: 10px 0;
+
+      &::before {
+        content: "\25C8";
+        padding: 0px 10px 0px 0px;
+      }
+    }
+  }
+
+  //!===========================================================================
+
+  &__raith {
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+  }
+  &__raith-content-line {
+    @extend .raith-line;
+  }
+
+  &__raith-title {
+    padding: 20px 0px 20px 60px;
+    color: rgb(0, 51, 128);
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  &__raith-title-name {
+  }
+
+  &__raith-title-profil {
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    color: #000;
+  }
+
+  &__raith-about {
+    padding: 0px 0px 0px 60px;
+    p {
+      margin: 20px 0px 20px 0px;
+      @extend.color-text-lc;
+      color: #000;
+      max-width: 500px;
+    }
+  }
+
+  &__raith-title-text {
+    @extend.color-title-lc;
+    color: #000;
+  }
+
+  &__raith-code {
+    padding: 0px 0px 0px 60px;
+  }
+  &__raith-code-text {
+    width: 500px;
+    background: rgb(201, 201, 201);
+    border-radius: 3%;
+    transition: box-shadow 0.3s ease 0s;
+    &:hover {
+      box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+    }
+  }
+  &__raith-code-pre {
+    position: relative;
+    left: -170px;
+    width: 0px;
+  }
+
+  &__raith-work-examples {
+    
+  }
+  &__raith-work-examples-title{
+    padding: 0px 0px 0px 60px;
+  }
+  &__raith-content-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 0px 30px;
+    a {
+      @extend .color-text-lc;
+      color: rgb(36, 96, 187);
+      //   &::before {
+      //     content: "\25C8";
+      //     padding: 0px 10px 0px 0px;
+      //   }
+      transition: box-shadow 0.3s ease 0s;
+      &:hover {
+        color: rgb(109, 28, 28);
+        box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+      }
+    }
+  }
+  &__raith-content-column {
+    display: block;
+    text-align: center;
+    width: 160px;
+    p:first-child {
+      color: rgb(0, 51, 128);
+      font-weight: bold;
+    }
+    p {
+      margin: 10px 0;
+    }
+    margin: 0 10px;
+    a {
+      display: block;
+    }
+    img {
+      max-width: 160px;
+    }
+  }
+  &__raith-content-logo-img {
+  }
+
+  //!===================================================================
+  &__raith-footer {
+    margin: 40px 0px 0px 0px;
+    background: rgb(63, 76, 134);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+    p {
+      @extend.color-title-lc;
+      max-width: 100px;
+      margin: 0;
+    }
+  }
+  &__raith-footer-link {
+    position: relative;
+  }
+
+  &__raith-footer-link-a {
+  }
+  &__raith-content-logo-link-git {
+    display: flex;
+    align-items: center;
+    @extend .color-text-lc;
+    border-bottom: 1px solid rgb(15, 44, 105);
+    &:hover {
+      border: none;
+    }
+  }
+  &__raith-content-logo-img-git {
+    max-width: 50px;
+    height: 50px;
+
+    //
+  }
+  &__raith-content-logo-link-rss {
+    display: block;
+    // color: #000;
+    border-bottom: 1px solid rgb(15, 44, 105);
+    &:hover {
+      border: none;
+    }
+  }
+  &__raith-content-logo-img-rss {
+    max-width: 80px;
+    height: 40px;
+  }
+}
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
+
+//!===============================================================================
