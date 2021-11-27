@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.color-title-lc, .column__left-content-title, .column__raith-title-text, .column__raith-footer p {
+  color: white;
+  font-size: 22px;
+  margin: 20px 0px 0px 20px;
+  font-weight: bold;
+}
+
+.color-text-lc, .column__left-content-title-info, .column__left-content-title-info-contacts p, .column__left-content-li span, .column__left-text-ul li, .column__raith-about p, .column__raith-content-work a, .column__raith-content-logo-link-git {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.raith-line, .column__raith-content-line {
+  width: 84%;
+  height: 2px;
+  background: #003380;
+  margin: 20px 0px 25px 0px;
+}
+
+body {
+  background: #050505;
+  font-family: "Heebo", sans-serif;
+  height: 100%;
+  min-width: 920px;
+}
+
+.header__conteier {
+  max-width: 920px;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+}
+
+.header__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column__left {
+  background: #292f31;
+  padding: 0px 20px 0px 40px;
+}
+
+.column__left-photo {
+  margin: 20px 0px 40px 20px;
+}
+
+.column__left-img {
+  max-width: 180px;
+  border-radius: 5%;
+  border: 1px solid #003380;
+}
+
+.column__left-content-one {
+  margin: 0px 0px 30px 0px;
+}
+
+.column__left-content-one p:first-child {
+  font-weight: bold;
+}
+
+.column__left-content-one p {
+  margin: 10px 0px 5px 0px;
+}
+
+.column__left-content-education-two {
+  font-weight: bold;
+}
+
+.column__left-content-line {
+  width: 100%;
+  height: 2px;
+  background: #003380;
+  margin: 20px 0px 40px 0px;
+}
+
+.column__left-content-title-info-contacts {
+  margin: 0px 0px 20px 0px;
+  min-width: 250px;
+}
+
+.column__left-content-title-info-contacts p {
+  margin: 10px 0px;
+}
+
+.column__left-content-title-info-contacts p a {
+  color: #2460bb;
+}
+
+.column__left-content-title-info-contacts p a:hover {
+  color: whitesmoke;
+}
+
+.column__left-content-title-info-contacts .phone::before {
+  content: "";
+  background: url("https://img.icons8.com/fluency/48/000000/phone.png") 0 0/contain no-repeat;
+  padding: 0px 0px 0px 40px;
+}
+
+.column__left-content-title-info-contacts .mail::before {
+  content: "";
+  background: url("https://img.icons8.com/fluency/48/000000/new-post.png") 0 0/contain no-repeat;
+  padding: 0px 0px 0px 40px;
+}
+
+.column__left-content-title-info-contacts .telegram::before {
+  content: "";
+  background: url("https://img.icons8.com/color/48/000000/telegram-app--v1.png") 0 0/contain no-repeat;
+  padding: 0px 0px 0px 40px;
+}
+
+.column__left-content-title-info-contacts .discord {
+  color: #2460bb;
+}
+
+.column__left-content-title-info-contacts .discord:hover {
+  color: white;
+}
+
+.column__left-content-title-info-contacts .discord::before {
+  content: "";
+  background: url("/img/svg/discord.svg") 0 0/contain no-repeat;
+  padding: 0px 0px 0px 40px;
+}
+
+.column__left-content-logo-img {
+  max-width: 40px;
+}
+
+.column__left-content-li {
+  margin: 10px 0px 10px 0px;
+}
+
+.column__left-content-li span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 0px 0px;
+  color: #faf6f6;
+  padding: 0px 0px 0px 10px;
+}
+
+.column__left-text-ul {
+  margin: 20px 0;
+}
+
+.column__left-text-ul li {
+  color: white;
+  margin: 10px 0;
+}
+
+.column__left-text-ul li::before {
+  content: "\25C8";
+  padding: 0px 10px 0px 0px;
+}
+
+.column__raith {
+  width: 100%;
+  padding: 40px 0px 0px 0px;
+}
+
+.column__raith-title {
+  padding: 20px 0px 20px 60px;
+  color: #003380;
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.column__raith-title-profil {
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  color: #000;
+}
+
+.column__raith-about {
+  padding: 0px 0px 0px 60px;
+}
+
+.column__raith-about p {
+  margin: 20px 0px 20px 0px;
+  color: #000;
+  max-width: 500px;
+}
+
+.column__raith-title-text {
+  color: #000;
+}
+
+.column__raith-code {
+  padding: 0px 0px 0px 60px;
+}
+
+.column__raith-code-text {
+  width: 500px;
+  background: #c9c9c9;
+  border-radius: 3%;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+}
+
+.column__raith-code-text:hover {
+  -webkit-box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+}
+
+.column__raith-code-pre {
+  position: relative;
+  left: -170px;
+  width: 0px;
+}
+
+.column__raith-work-examples-title {
+  padding: 0px 0px 0px 60px;
+}
+
+.column__raith-content-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 0px 0px 30px;
+}
+
+.column__raith-content-work a {
+  color: #2460bb;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+}
+
+.column__raith-content-work a:hover {
+  color: #6d1c1c;
+  -webkit-box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 10px rgba(34, 60, 80, 0.2);
+}
+
+.column__raith-content-column {
+  display: block;
+  text-align: center;
+  width: 160px;
+  margin: 0 10px;
+}
+
+.column__raith-content-column p:first-child {
+  color: #003380;
+  font-weight: bold;
+}
+
+.column__raith-content-column p {
+  margin: 10px 0;
+}
+
+.column__raith-content-column a {
+  display: block;
+}
+
+.column__raith-content-column img {
+  max-width: 160px;
+}
+
+.column__raith-footer {
+  margin: 40px 0px 0px 0px;
+  background: #3f4c86;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+}
+
+.column__raith-footer p {
+  max-width: 100px;
+  margin: 0;
+}
+
+.column__raith-footer-link {
+  position: relative;
+}
+
+.column__raith-content-logo-link-git {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #0f2c69;
+}
+
+.column__raith-content-logo-link-git:hover {
+  border: none;
+}
+
+.column__raith-content-logo-img-git {
+  max-width: 50px;
+  height: 50px;
+}
+
+.column__raith-content-logo-link-rss {
+  display: block;
+  border-bottom: 1px solid #0f2c69;
+}
+
+.column__raith-content-logo-link-rss:hover {
+  border: none;
+}
+
+.column__raith-content-logo-img-rss {
+  max-width: 80px;
+  height: 40px;
+}
